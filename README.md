@@ -1,15 +1,3 @@
-# Shape-Guided Dual-Memory Learning for 3D Anomaly Detection (ICML2023)
-### [Paper Link](https://openreview.net/pdf?id=IkSGn9fcPz)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shape-guided-shape-guided-dual-memory/3d-anomaly-detection-and-segmentation-on)](https://paperswithcode.com/sota/3d-anomaly-detection-and-segmentation-on?p=shape-guided-shape-guided-dual-memory)
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shape-guided-shape-guided-dual-memory/rgb-3d-anomaly-detection-and-segmentation-on)](https://paperswithcode.com/sota/rgb-3d-anomaly-detection-and-segmentation-on?p=shape-guided-shape-guided-dual-memory)
-## Qualitative Results
-Signed Distance Function(SDF) means the method we estimate the point cloud to detect anomaly. We utilize the information of the RGB and the corresponding 3D point cloud to detect anomaly and complement each other to get the final score map.
-![image](https://github.com/jayliu0313/Shape-Guided/blob/main/img/complementary_heatmap.png)
-### Img-AUROC Results
-![image](https://github.com/jayliu0313/Shape-Guided/blob/main/img/Img_AUROC.png)
-### AU PRO Results
-![image](https://github.com/jayliu0313/Shape-Guided/blob/main/img/Pix_AUPRO.png)
-## Installation
 ### Requirement
 Linux (Ubuntu 16.04)  
 Python 3.6+  
@@ -59,18 +47,3 @@ You can use "--vis" to visualize our result of the heat map.
 python main.py --datasets_path DATASET_PATH --grid_path data/ --ckpt_path "checkpoint/best_ckpt/ckpt_000601.pth"
 ```
 
-## Citation
-If our paper is useful for your research, please cite our paper. Thank you!
-```
-@InProceedings{pmlr-v202-chu23b,
-  title = {Shape-Guided Dual-Memory Learning for 3D Anomaly Detection},
-  author = {Chu, Yu-Min and Liu, Chieh and Hsieh, Ting-I and Chen, Hwann-Tzong and Liu, Tyng-Luh},
-  booktitle = {Proceedings of the 40th International Conference on Machine Learning},
-  pages = {6185--6194},
-  year = {2023},
-}
-```
-
-## Reference
-Our memory architecture is refer to https://github.com/eliahuhorwitz/3D-ADS  
-3D expert model is modified from https://github.com/mabaorui/PredictableContextPrior
