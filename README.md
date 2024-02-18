@@ -6,7 +6,7 @@ CUDA 10.2 or higher
 
 ### create environment
 ```
-git clone https://github.com/jayliu0313/Shape-Guided.git
+git clone https://github.com/jcjlin/shape-guided-refined.git
 cd Shape-Guided
 conda create --name myenv python=3.6
 conda activate myenv
